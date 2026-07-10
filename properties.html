@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<title>Properties — Dubai Real Estate Services</title>
+<meta name="description" content="Browse curated Dubai listings across Downtown, Palm Jumeirah, Marina and Business Bay.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">D</span>
+      <span class="brand__text"><b>Dubai</b> Real Estate Services<small>By Tumi &middot; Est. Dubai</small></span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="properties.html" class="is-active">Properties</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Tumi</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a href="https://wa.me/971500000000" class="nav__whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="contact.html" class="btn btn--gold"><span>Book a Consultation</span><i class="fa-solid fa-arrow-right"></i></a>
+      <button class="nav__toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero__bg"><img src="https://images.pexels.com/photos/19894545/pexels-photo-19894545.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Dubai skyline silhouette at golden hour"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>Properties</div>
+    <p class="eyebrow">Current Listings</p>
+    <h1>Nine ways to <em>own</em> in Dubai.</h1>
+    <p class="lede" style="color:var(--pearl-dim)">Ready and off-plan units across the city's four defining communities, vetted by Tumi before they ever reach this page.</p>
+  </div>
+</header>
+
+<section class="section--tight">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-chip is-active" data-filter="all">All Communities</button>
+      <button class="filter-chip" data-filter="downtown">Downtown Dubai</button>
+      <button class="filter-chip" data-filter="palm">Palm Jumeirah</button>
+      <button class="filter-chip" data-filter="marina">Dubai Marina</button>
+      <button class="filter-chip" data-filter="businessbay">Business Bay</button>
+    </div>
+
+    <div class="property-grid property-grid--masonry">
+
+      <article class="card" data-community="downtown" data-reveal>
+        <div class="card__media">
+          <img src="https://images.pexels.com/photos/33687811/pexels-photo-33687811.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aerial view of Downtown Dubai and Burj Khalifa at sunset">
+          <span class="card__badge">Ready</span><span class="card__fav"><i class="fa-regular fa-heart"></i></span>
+          <span class="card__price">AED 4.2M</span>
+        </div>
+        <div class="card__body">
+          <div class="card__loc"><i class="fa-solid fa-location-dot"></i> Downtown Dubai</div>
+          <h3>The Address Residences</h3>
+          <p style="font-size:.9rem;color:#5b5546">High-floor two-bedroom, unobstructed Burj Khalifa and fountain views.</p>
+          <div class="card__specs"><span><i class="fa-solid fa-bed"></i> 2</span><span><i class="fa-solid fa-bath"></i> 3</span><span><i class="fa-solid fa-ruler-combined"></i> 1,450 sqft</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-community="palm" data-reveal data-reveal-delay="1">
+        <div class="card__media">
+          <img src="https://images.pexels.com/photos/28720826/pexels-photo-28720826.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aerial view of Atlantis Hotel and Palm Jumeirah">
+          <span class="card__badge">Waterfront</span><span class="card__fav"><i class="fa-regular fa-heart"></i></span>
+          <span class="card__price">AED 18.5M</span>
+        </div>
+        <div class="card__body">
+          <div class="card__loc"><i class="fa-solid fa-location-dot"></i> Palm Jumeirah</div>
+          <h3>Palm Signature Villa</h3>
+          <p style="font-size:.9rem;color:#5b5546">Private-beach frond villa, rooftop terrace, dedicated boat mooring.</p>
+          <div class="card__specs"><span><i class="fa-solid fa-bed"></i> 5</span><span><i class="fa-solid fa-bath"></i> 6</span><span><i class="fa-solid fa-ruler-combined"></i> 7,900 sqft</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-community="marina" data-reveal data-reveal-delay="2">
+        <div class="card__media">
+          <img src="https://images.pexels.com/photos/33606674/pexels-photo-33606674.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aerial view of Dubai skyline at dusk">
+          <span class="card__badge">Off-Plan</span><span class="card__fav"><i class="fa-regular fa-heart"></i></span>
+          <span class="card__price">AED 3.15M</span>
+        </div>
+        <div class="card__body">
+          <div class="card__loc"><i class="fa-solid fa-location-dot"></i> Dubai Marina</div>
+          <h3>Marina Gate Sky Residence</h3>
+          <p style="font-size:.9rem;color:#5b5546">Handover Q2 2027, flexible 60/40 payment plan, promenade access.</p>
+          <div class="card__specs"><span><i class="fa-solid fa-bed"></i> 1</span><span><i class="fa-solid fa-bath"></i> 2</span><span><i class="fa-solid fa-ruler-combined"></i> 890 sqft</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-community="businessbay" data-reveal>
+        <div class="card__media">
+          <img src="https://images.pexels.com/photos/19136351/pexels-photo-19136351.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Dubai skyscrapers at sunset">
+          <span class="card__badge">Ready</span><span class="card__fav"><i class="fa-regular fa-heart"></i></span>
+          <span class="card__price">AED 2.45M</span>
+        </div>
+        <div class="card__body">
+          <div class="card__loc"><i class="fa-solid fa-location-dot"></i> Business Bay</div>
+          <h3>Bay Square Executive Suite</h3>
+          <p style="font-size:.9rem;color:#5b5546">Canal-facing one-bedroom, five minutes from DIFC by car.</p>
+          <div class="card__specs"><span><i class="fa-solid fa-bed"></i> 1</span><span><i class="fa-solid fa-bath"></i> 2</span><span><i class="fa-solid fa-ruler-combined"></i> 760 sqft</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-community="palm" data-reveal data-reveal-delay="1">
+        <div class="card__media">
+          <img src="https://images.pexels.com/photos/10593605/pexels-photo-10593605.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aerial view of Palm Jumeirah island">
+          <span class="card__badge">Exclusive</span><span class="card__fav"><i class="fa-regular fa-heart"></i></span>
+          <span class="card__price">AED 22M</span>
+        </div>
+        <div class="card__body">
+          <div class="card__loc"><i class="fa-solid fa-location-dot"></i> Jumeirah</div>
+          <h3>Jumeirah Coastal Estate</h3>
+          <p style="font-size:.9rem;color:#5b5546">Beachfront estate with private jetty and staff quarters.</p>
+          <div class="card__specs"><span><i class="fa-solid fa-bed"></i> 6</span><span><i class="fa-solid fa-bath"></i> 7</span><span><i class="fa-solid fa-ruler-combined"></i> 11,200 sqft</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-community="downtown" data-reveal data-reveal-delay="2">
+        <div class="card__media">
+          <img src="https://images.pexels.com/photos/35791376/pexels-photo-35791376.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Dubai skyline featuring the Burj Khalifa under a blue sky">
+          <span class="card__badge">Ready</span><span class="card__fav"><i class="fa-regular fa-heart"></i></span>
+          <span class="card__price">AED 2.89M</span>
+        </div>
+        <div class="card__body">
+          <div class="card__loc"><i class="fa-solid fa-location-dot"></i> City Walk</div>
+          <h3>City Walk Loft Residences</h3>
+          <p style="font-size:.9rem;color:#5b5546">Designer loft steps from City Walk's boutique retail strip.</p>
+          <div class="card__specs"><span><i class="fa-solid fa-bed"></i> 2</span><span><i class="fa-solid fa-bath"></i> 2</span><span><i class="fa-solid fa-ruler-combined"></i> 1,180 sqft</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-community="palm" data-reveal>
+        <div class="card__media">
+          <img src="https://images.pexels.com/photos/29212670/pexels-photo-29212670.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Aerial view of Palm Jumeirah beach in Dubai">
+          <span class="card__badge">Off-Plan</span><span class="card__fav"><i class="fa-regular fa-heart"></i></span>
+          <span class="card__price">AED 5.6M</span>
+        </div>
+        <div class="card__body">
+          <div class="card__loc"><i class="fa-solid fa-location-dot"></i> Emaar Beachfront</div>
+          <h3>Beachfront Tower Suite</h3>
+          <p style="font-size:.9rem;color:#5b5546">Direct beach access, handover Q4 2026, three-bedroom layout.</p>
+          <div class="card__specs"><span><i class="fa-solid fa-bed"></i> 3</span><span><i class="fa-solid fa-bath"></i> 4</span><span><i class="fa-solid fa-ruler-combined"></i> 1,980 sqft</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-community="marina" data-reveal data-reveal-delay="1">
+        <div class="card__media">
+          <img src="https://images.pexels.com/photos/28729467/pexels-photo-28729467.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Spacious modern duplex living room with floor to ceiling windows">
+          <span class="card__badge">Ready</span><span class="card__fav"><i class="fa-regular fa-heart"></i></span>
+          <span class="card__price">AED 6.75M</span>
+        </div>
+        <div class="card__body">
+          <div class="card__loc"><i class="fa-solid fa-location-dot"></i> Dubai Marina</div>
+          <h3>Marina Promenade Duplex</h3>
+          <p style="font-size:.9rem;color:#5b5546">Two-level duplex with private spiral staircase and full Marina views.</p>
+          <div class="card__specs"><span><i class="fa-solid fa-bed"></i> 4</span><span><i class="fa-solid fa-bath"></i> 5</span><span><i class="fa-solid fa-ruler-combined"></i> 3,400 sqft</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-community="businessbay" data-reveal data-reveal-delay="2">
+        <div class="card__media">
+          <img src="https://images.pexels.com/photos/19689230/pexels-photo-19689230.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Stylish living room featuring modern furniture and warm lighting">
+          <span class="card__badge">Ready</span><span class="card__fav"><i class="fa-regular fa-heart"></i></span>
+          <span class="card__price">AED 3.98M</span>
+        </div>
+        <div class="card__body">
+          <div class="card__loc"><i class="fa-solid fa-location-dot"></i> Business Bay</div>
+          <h3>Waterside Loft</h3>
+          <p style="font-size:.9rem;color:#5b5546">Fully furnished canal-view loft with private plunge pool terrace.</p>
+          <div class="card__specs"><span><i class="fa-solid fa-bed"></i> 2</span><span><i class="fa-solid fa-bath"></i> 3</span><span><i class="fa-solid fa-ruler-combined"></i> 1,620 sqft</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Where They Sit</p>
+      <h2>All nine, <em>on one map.</em></h2>
+    </div>
+    <div class="map-wrap" data-reveal>
+      <div class="map-legend"><b>Live Listings</b>Gold pins mark every current property. Tap a pin for a quick summary.</div>
+      <div id="map" data-spots='[
+        {"lat":25.1972,"lng":55.2744,"name":"The Address Residences","note":"Downtown Dubai · AED 4.2M"},
+        {"lat":25.1124,"lng":55.1390,"name":"Palm Signature Villa","note":"Palm Jumeirah · AED 18.5M"},
+        {"lat":25.0800,"lng":55.1403,"name":"Marina Gate Sky Residence","note":"Dubai Marina · AED 3.15M"},
+        {"lat":25.1857,"lng":55.2634,"name":"Bay Square Executive Suite","note":"Business Bay · AED 2.45M"},
+        {"lat":25.1462,"lng":55.1889,"name":"Jumeirah Coastal Estate","note":"Jumeirah · AED 22M"},
+        {"lat":25.2010,"lng":55.2601,"name":"City Walk Loft Residences","note":"City Walk · AED 2.89M"},
+        {"lat":25.0947,"lng":55.1345,"name":"Beachfront Tower Suite","note":"Emaar Beachfront · AED 5.6M"},
+        {"lat":25.0757,"lng":55.1414,"name":"Marina Promenade Duplex","note":"Dubai Marina · AED 6.75M"},
+        {"lat":25.1877,"lng":55.2665,"name":"Waterside Loft","note":"Business Bay · AED 3.98M"}
+      ]'></div>
+    </div>
+  </div>
+</section>
+
+<section class="section--tight">
+  <div class="container">
+    <div class="cta-band" data-reveal>
+      <h2>Don't see the right unit? <br>We source <em>off-market</em> too.</h2>
+      <a href="contact.html" class="btn btn--gold"><span>Tell Us What You Want</span><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:1.2rem">
+          <span class="brand__mark">D</span>
+          <span class="brand__text"><b>Dubai</b> Real Estate Services</span>
+        </a>
+        <p style="max-width:32ch;font-size:.88rem">Concierge property advisory for buyers entering Dubai from anywhere in the world.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/971500000000" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul><li><a href="properties.html">Properties</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About Tumi</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h5>Communities</h5>
+        <ul><li><a href="properties.html">Downtown Dubai</a></li><li><a href="properties.html">Palm Jumeirah</a></li><li><a href="properties.html">Dubai Marina</a></li><li><a href="properties.html">Business Bay</a></li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><i class="fa-solid fa-location-dot icon-inline"></i> Downtown Dubai, UAE</li>
+          <li><i class="fa-solid fa-phone icon-inline"></i> +971 50 000 0000</li>
+          <li><i class="fa-solid fa-envelope icon-inline"></i> hello@dubairealestateservices.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Dubai Real Estate Services. All rights reserved.</span>
+      <span>RERA ORN 00000 &middot; Built for Tumi</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/971500000000" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
